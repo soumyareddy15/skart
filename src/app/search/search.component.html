@@ -1,14 +1,40 @@
-<h1>{{title}}</h1>
-<input [(ngModel)]="searchText" placeholder="Enter Product ID/Name" />
-<select id="sort-by" (change)="sort($event)">
-  <option value="" selected disabled hidden>Sort By</option>
-  <option value="Name">Name</option>
-  <option value="Low">Show Low to High Price</option>
-  <option value="High">Show High to Low Price</option>
-</select>
 
-<br/><br/>
-<table class="table table-dark table-hover" width="15%" border="1">
+
+
+
+
+<div class="topnav">
+  <div class="topnav">
+    <div class="container-fluid">
+      <div class="navbar-header">
+    <img src="assets/logo.jpg" class="img-circle" alt="Proj icon" height="50" width="50">
+    
+    </div>
+    
+    <a class="active" href="#home">Home</a> &nbsp; &nbsp;
+    
+    <div class="search-container">
+      <form action="/action_page.php">
+        <button class="btn btn-sm">
+        <select id="sort-by" (change)="sort($event)">
+          <option value="" selected disabled hidden>Sort By</option>
+          <option value="Name">Name</option>
+          <option value="Low">Show Low to High Price</option>
+          <option value="High">Show High to Low Price</option>
+        </select></button> &nbsp;&nbsp;&nbsp;&nbsp;
+        <input [(ngModel)]="searchText" type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button> &nbsp;
+        
+        
+      
+      </form>
+      
+    </div> 
+  </div>
+    
+</div>
+
+<table class="table table-dark table-hover table-bordered" width="15%" border="1">
   <thead>
     <tr>
       <th>Id</th>
