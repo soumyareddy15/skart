@@ -5,16 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { UserloginComponent } from './userlogin/userlogin.component';
-
+import { SearchComponent } from './search/search.component';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HomeComponent } from './home/home.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 @NgModule({
   declarations: [
     AppComponent,
     AdminloginComponent,
-    UserloginComponent
+    UserloginComponent,
+    SearchComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,FormsModule,ReactiveFormsModule,Ng2SearchPipeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
