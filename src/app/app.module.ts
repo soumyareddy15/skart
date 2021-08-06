@@ -10,13 +10,22 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { HeaderComponent } from './header/header.component';
+import { RetailerLoginComponent } from './retailer-login/retailer-login.component';
+import { FooterComponent } from './footer/footer.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     AdminloginComponent,
     UserloginComponent,
     SearchComponent,
-    HomeComponent
+    HomeComponent,
+    HeaderComponent,
+    RetailerLoginComponent,
+    FooterComponent,
+    
   ],
   imports: [
     BrowserModule,
