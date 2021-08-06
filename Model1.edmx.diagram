@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="88a6207e9fcc49e5b85a9885db4e7630" Name="Diagram1">
+        <EntityTypeShape EntityType="project1Model.tblCart" Width="1.5" PointX="8.25" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="project1Model.tblCategory" Width="1.5" PointX="3.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="project1Model.tblOrder" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="project1Model.tblProduct" Width="1.5" PointX="6" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="project1Model.tblRetailer" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="project1Model.tblUser" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="project1Model.FK__tblCart__product__1DE57479" ManuallyRouted="false" />
+        <AssociationConnector Association="project1Model.FK__tblCart__userema__1CF15040" ManuallyRouted="false" />
+        <AssociationConnector Association="project1Model.FK__tblProduc__categ__1A14E395" ManuallyRouted="false" />
+        <AssociationConnector Association="project1Model.FK__tblOrder__produc__21B6055D" ManuallyRouted="false" />
+        <AssociationConnector Association="project1Model.FK__tblOrder__retail__22AA2996" ManuallyRouted="false" />
+        <AssociationConnector Association="project1Model.FK__tblOrder__userem__20C1E124" ManuallyRouted="false" />
+        <AssociationConnector Association="project1Model.FK__tblProduc__retai__1920BF5C" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
